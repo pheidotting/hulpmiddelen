@@ -18,7 +18,7 @@ public abstract class AbstractRepository<T> {
 	private EntityManagerFactory emf;
 	private EntityManager em;
 	private EntityTransaction tx;
-	protected String persistenceContext = "dias";
+	private String persistenceContext = "dias";
 
 	private final Class<T> persistentClass;
 
