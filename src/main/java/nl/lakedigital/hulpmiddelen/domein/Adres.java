@@ -76,7 +76,11 @@ public class Adres implements Serializable {
         String deelTwee = postcode.substring(DEELEEN, MAXLENGTE);
 
         // Geeft wel een fout als e.e.a. niet numeriek is
-        Long.parseLong(deelEen);
+        try {
+            Long.parseLong(deelEen);
+        } catch (NumberFormatException e) {
+            throw new PostcodeNietGoedException(postcode);
+        }
         for (int i = 0; i < 2; i++) {
             try {
                 Long.parseLong(deelTwee.substring(i, (i + 1)));
