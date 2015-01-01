@@ -4,7 +4,7 @@
 
 	<groupId>nl.lakedigital</groupId>
 	<artifactId>hulpmiddelen</artifactId>
-	<version>0.0.4</version>
+	<version>0.0.5-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>hulpmiddelen</name>
@@ -38,12 +38,12 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
-			<version>LATEST</version>
+			<version>3.3.2</version>
 		</dependency>
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>LATEST</version>
+			<version>1.2.17</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -58,7 +58,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>LATEST</version>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 
