@@ -4,7 +4,7 @@
 
 	<groupId>nl.lakedigital</groupId>
 	<artifactId>hulpmiddelen</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<packaging>jar</packaging>
 
 	<name>hulpmiddelen</name>
@@ -15,6 +15,24 @@
 		<org.hibernate.version>4.3.0.CR1</org.hibernate.version>
 		<spring.version>3.2.5.RELEASE</spring.version>
 	</properties>
+	
+	<scm>
+		<connection>scm:git:https://github.com/pheidotting/hulpmiddelen.git</connection>
+		<developerConnection>scm:git:https://github.com/pheidotting/hulpmiddelen.git</developerConnection>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>Lake Digital</id>
+			<name>Lake Digital-releases</name>
+			<url>http://37.59.107.9:8081/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>Lake Digital</id>
+			<name>Lake Digital-snapshots</name>
+			<url>http://37.59.107.9:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
